@@ -1,211 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=375px, initial-scale=1.0">
-    <title>AdeleDev</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#6366f1',
-                        secondary: '#a855f7'
-                    },
-                    borderRadius: {
-                        'none': '0px',
-                        'sm': '4px',
-                        DEFAULT: '8px',
-                        'md': '12px',
-                        'lg': '16px',
-                        'xl': '20px',
-                        '2xl': '24px',
-                        '3xl': '32px',
-                        'full': '9999px',
-                        'button': '8px'
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        :where([class^="ri-"])::before { content: "\f3c2"; }
-        body { width: 375px; margin: 0 auto; }
-        .nav-active { color: #6366f1; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=375px, initial-scale=1.0">
+<title>AdeleDev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#6366f1',
+secondary: '#a855f7'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body { width: 375px; margin: 0 auto; }
+.nav-active { color: #6366f1; }
+[class^="ri-"] { color: white; }
+</style>
 </head>
-<body class="bg-white min-h-screen">
-    <nav class="fixed top-0 w-full bg-black z-50 border-b">
-        <div class="px-4 py-3 flex justify-between items-center">
-            <h1 class="font-['Pacifico'] text-xl text-primary">logo</h1>
-            <button id="menuBtn" class="w-8 h-8 flex items-center justify-center">
-                <i class="ri-menu-line text-xl"></i>
-            </button>
-        </div>
-        <div id="mobileMenu" class="hidden px-4 py-2 bg-white border-t absolute w-full">
-            <a href="#home" class="block py-2 nav-active">Home</a>
-            <a href="#projects" class="block py-2">Projects</a>
-            <a href="#services" class="block py-2">Services</a>
-            <a href="#blog" class="block py-2">Blog</a>
-            <a href="#contact" class="block py-2">Contact</a>
-        </div>
-    </nav>
-
-    <main class="pt-16 pb-20">
-        <section id="home" class="px-4 py-8">
-            <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold mb-4">Building Digital Solutions for Tomorrow</h2>
-                <p class="text-gray-600 mb-6">We create innovative tech solutions that transform ideas into reality</p>
-                <button class="bg-primary text-white px-6 py-3 !rounded-button">Explore Our Work</button>
-            </div>
-            <div class="relative h-48 mb-8 rounded-lg overflow-hidden">
-                <img src="https://public.readdy.ai/ai/img_res/7e486735c2c4a6362f8ea540b9578a1d.jpg" 
-                     class="w-full h-full object-cover" alt="Office">
-            </div>
-        </section>
-
-        <section id="projects" class="py-8">
-            <h3 class="text-2xl font-bold px-4 mb-6">Featured Projects</h3>
-            <div class="overflow-x-auto">
-                <div class="flex px-4 space-x-4">
-                    <div class="flex-none w-72">
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src=an.png
-                                 class="w-full h-48 object-cover" alt="Anonify">
-                            <div class="p-4">
-                                <h4 class="font-bold mb-2">Anonify</h4>
-                                <p class="text-sm text-gray-600 mb-4">Anonymous messaging platform with enhanced privacy features</p>
-                                <div class="flex space-x-2 mb-4">
-                                    <span class="text-xs bg-gray-100 px-2 py-1 rounded">React</span>
-                                    <span class="text-xs bg-gray-100 px-2 py-1 rounded">Node.js</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-none w-72">
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="https://public.readdy.ai/ai/img_res/f9ee754083cb695e14b0bf2b9f4ae2e7.jpg" 
-                                 class="w-full h-48 object-cover" alt="MyDaily2k">
-                            <div class="p-4">
-                                <h4 class="font-bold mb-2">MyDaily2k</h4>
-                                <p class="text-sm text-gray-600 mb-4">Income tracking and promotion platform</p>
-                                <div class="flex space-x-2 mb-4">
-                                    <span class="text-xs bg-gray-100 px-2 py-1 rounded">Vue.js</span>
-                                    <span class="text-xs bg-gray-100 px-2 py-1 rounded">Firebase</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="px-4 py-8">
-            <h3 class="text-2xl font-bold mb-6">Our Services</h3>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <div class="w-12 h-12 flex items-center justify-center mb-3">
-                        <i class="ri-code-line text-2xl text-primary"></i>
-                    </div>
-                    <h4 class="font-bold mb-2">Web Development</h4>
-                    <p class="text-sm text-gray-600">Custom web solutions for your business needs</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <div class="w-12 h-12 flex items-center justify-center mb-3">
-                        <i class="ri-gamepad-line text-2xl text-primary"></i>
-                    </div>
-                    <h4 class="font-bold mb-2">Game Development</h4>
-                    <p class="text-sm text-gray-600">Creative gaming experiences with Godot Engine</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="px-4 py-8 bg-gray-50">
-            <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
-            <form id="contactForm" class="space-y-4">
-                <div>
-                    <input type="text" placeholder="Name" class="w-full p-3 rounded-lg border focus:outline-none focus:border-primary">
-                </div>
-                <div>
-                    <input type="email" placeholder="Email" class="w-full p-3 rounded-lg border focus:outline-none focus:border-primary">
-                </div>
-                <div>
-                    <textarea placeholder="Message" rows="4" class="w-full p-3 rounded-lg border focus:outline-none focus:border-primary"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-primary text-white py-3 !rounded-button">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <div id="toast" class="fixed bottom-20 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-lg opacity-0 transition-opacity duration-300 pointer-events-none">
-        Message sent successfully!
-    </div>
-
-    <footer class="fixed bottom-0 w-full bg-white border-t">
-        <div class="grid grid-cols-4 py-2">
-            <a href="#home" class="flex flex-col items-center space-y-1 nav-active">
-                <div class="w-6 h-6 flex items-center justify-center">
-                    <i class="ri-home-line"></i>
-                </div>
-                <span class="text-[10px]">Home</span>
-            </a>
-            <a href="#projects" class="flex flex-col items-center space-y-1">
-                <div class="w-6 h-6 flex items-center justify-center">
-                    <i class="ri-folder-line"></i>
-                </div>
-                <span class="text-[10px]">Projects</span>
-            </a>
-            <a href="#services" class="flex flex-col items-center space-y-1">
-                <div class="w-6 h-6 flex items-center justify-center">
-                    <i class="ri-service-line"></i>
-                </div>
-                <span class="text-[10px]">Services</span>
-            </a>
-            <a href="#contact" class="flex flex-col items-center space-y-1">
-                <div class="w-6 h-6 flex items-center justify-center">
-                    <i class="ri-message-line"></i>
-                </div>
-                <span class="text-[10px]">Contact</span>
-            </a>
-        </div>
-    </footer>
-
-    <script>
-        const menuBtn = document.getElementById('menuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const contactForm = document.getElementById('contactForm');
-        const toast = document.getElementById('toast');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                mobileMenu.classList.add('hidden');
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-
-                document.querySelectorAll('a').forEach(a => a.classList.remove('nav-active'));
-                this.classList.add('nav-active');
-            });
-        });
-
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            toast.style.opacity = '1';
-            setTimeout(() => {
-                toast.style.opacity = '0';
-            }, 3000);
-            contactForm.reset();
-        });
-    </script>
+<body class="bg-black min-h-screen">
+<nav class="fixed top-0 w-full bg-black z-50 border-b border-gray-800">
+<div class="px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+  <img src="https://static.readdy.ai/image/44732c66da0cd15282f9a28a1f563aa8/2a9f9b6e9cf130e134e36a43cb2d73de.png" alt="logo" class="h-8">
+</div>
+<button id="menuBtn" class="w-8 h-8 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+<div id="mobileMenu" class="hidden px-4 py-2 bg-black border-t border-gray-800 absolute w-full">
+<a href="#home" class="block py-2 nav-active text-white">Home</a>
+<a href="#projects" class="block py-2 text-white">Projects</a>
+<a href="#services" class="block py-2 text-white">Services</a>
+<a href="#blog" class="block py-2 text-white">Blog</a>
+<a href="#contact" class="block py-2 text-white">Contact</a>
+</div>
+</nav>
+<main class="pt-16 pb-20">
+<section id="home" class="px-4 py-8">
+<div class="text-center mb-8">
+<h2 class="text-3xl font-bold mb-4 text-white">Building Digital Solutions for Tomorrow</h2>
+<p class="text-gray-400 mb-6">We create innovative tech solutions that transform ideas into reality</p>
+<button class="bg-primary text-white px-6 py-3 !rounded-button">Explore Our Work</button>
+</div>
+<div class="relative h-48 mb-8 rounded-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/7e486735c2c4a6362f8ea540b9578a1d.jpg"
+class="w-full h-full object-cover" alt="Office">
+</div>
+</section>
+<section id="projects" class="py-8">
+<h3 class="text-2xl font-bold px-4 mb-6 text-white">Featured Projects</h3>
+<div class="overflow-x-auto">
+<div class="flex px-4 space-x-4">
+<div class="flex-none w-72">
+<div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+<img src=an.png
+class="w-full h-48 object-cover" alt="Anonify">
+<div class="p-4">
+<h4 class="font-bold mb-2 text-white">Anonify</h4>
+<p class="text-sm text-gray-400 mb-4">Anonymous messaging platform with enhanced privacy features</p>
+<div class="flex space-x-2 mb-4">
+<span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">React</span>
+<span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Node.js</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-none w-72">
+<div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+<img src=dk.png
+class="w-full h-48 object-cover" alt="MyDaily2k">
+<div class="p-4">
+<h4 class="font-bold mb-2 text-white">MyDaily2k</h4>
+<p class="text-sm text-gray-400 mb-4">Income tracking and promotion platform</p>
+<div class="flex space-x-2 mb-4">
+<span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Vue.js</span>
+<span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Firebase</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="services" class="px-4 py-8">
+<h3 class="text-2xl font-bold mb-6 text-white">Our Services</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-gray-900 p-4 rounded-lg shadow">
+<div class="w-12 h-12 flex items-center justify-center mb-3">
+<i class="ri-code-line text-2xl text-primary"></i>
+</div>
+<h4 class="font-bold mb-2 text-white">Web Development</h4>
+<p class="text-sm text-gray-400">Custom web solutions for your business needs</p>
+</div>
+<div class="bg-gray-900 p-4 rounded-lg shadow">
+<div class="w-12 h-12 flex items-center justify-center mb-3">
+<i class="ri-gamepad-line text-2xl text-primary"></i>
+</div>
+<h4 class="font-bold mb-2 text-white">Game Development</h4>
+<p class="text-sm text-gray-400">Creative gaming experiences with Godot Engine</p>
+</div>
+<div class="bg-gray-900 p-4 rounded-lg shadow">
+<div class="w-12 h-12 flex items-center justify-center mb-3">
+<i class="ri-palette-line text-2xl text-primary"></i>
+</div>
+<h4 class="font-bold mb-2 text-white">Graphics Design</h4>
+<p class="text-sm text-gray-400">Professional branding and visual identity solutions</p>
+</div>
+</div>
+</section>
+<section id="contact" class="px-4 py-8 bg-gray-900">
+<h3 class="text-2xl font-bold mb-6 text-white">Get in Touch</h3>
+<form id="contactForm" class="space-y-4">
+<div>
+<input type="text" placeholder="Name" class="w-full p-3 rounded-lg border focus:outline-none focus:border-primary">
+</div>
+<div>
+<input type="email" placeholder="Email" class="w-full p-3 rounded-lg border focus:outline-none focus:border-primary">
+</div>
+<div>
+<textarea placeholder="Message" rows="4" class="w-full p-3 rounded-lg border focus:outline-none focus:border-primary"></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button">Send Message</button>
+</form>
+</section>
+</main>
+<div id="toast" class="fixed bottom-20 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-lg opacity-0 transition-opacity duration-300 pointer-events-none">
+Message sent successfully!
+</div>
+<footer class="fixed bottom-0 w-full bg-black border-t border-gray-800">
+<div class="grid grid-cols-4 py-2">
+<a href="#home" class="flex flex-col items-center space-y-1 nav-active">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-home-line"></i>
+</div>
+<span class="text-[10px] text-gray-400">Home</span>
+</a>
+<a href="#projects" class="flex flex-col items-center space-y-1">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-folder-line"></i>
+</div>
+<span class="text-[10px] text-gray-400">Projects</span>
+</a>
+<a href="#services" class="flex flex-col items-center space-y-1">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-service-line"></i>
+</div>
+<span class="text-[10px] text-gray-400">Services</span>
+</a>
+<a href="#contact" class="flex flex-col items-center space-y-1">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-message-line"></i>
+</div>
+<span class="text-[10px] text-gray-400">Contact</span>
+</a>
+</div>
+</footer>
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const contactForm = document.getElementById('contactForm');
+const toast = document.getElementById('toast');
+menuBtn.addEventListener('click', () => {
+mobileMenu.classList.toggle('hidden');
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+mobileMenu.classList.add('hidden');
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+document.querySelectorAll('a').forEach(a => a.classList.remove('nav-active'));
+this.classList.add('nav-active');
+});
+});
+contactForm.addEventListener('submit', (e) => {
+e.preventDefault();
+toast.style.opacity = '1';
+setTimeout(() => {
+toast.style.opacity = '0';
+}, 3000);
+contactForm.reset();
+});
+</script>
 </body>
 </html>
